@@ -19,7 +19,7 @@ const token =
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MDY1OTA0NjEsImV4cCI6MTkyMjE2NjQ2MX0.DdY7GaiHsQWyTH_xkslHb17Cbc3yLFfMFwoEpx89JiA";
 
 const cubejsApi = cubejs(token, {
-  apiUrl: "https://harsh-eel.aws-us-east-2.cubecloudapp.dev/cubejs-api/v1",
+  apiUrl: process.env.REACT_APP_API_URL,
 });
 
 const AppLayout = ({ location, children }) => {
